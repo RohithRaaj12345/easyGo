@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="#8A8A8A" />
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:src="@drawable/icon"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"/>
+
+    <FrameLayout
+        android:id="@+id/frame_email_password"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/emiail"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+            android:hint="E-Mail"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/emiail"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/shape"
+            android:hint="Password"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/white" />
+    </FrameLayout>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Login"
+        android:id="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/frame_email_password"
+        android:layout_marginTop="50dp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/button_shape"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/haveanaccount"
+        android:text="Don't have an account"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/signin"
+        android:layout_below="@+id/haveanaccount"
+        android:text="sign up"
+        android:textColorHint="@color/white"
+        android:background="@drawable/button_shape"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

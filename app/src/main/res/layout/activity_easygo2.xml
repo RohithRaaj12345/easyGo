@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Easygo2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#8A8A8A"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/res1"
+        android:src="@drawable/img_1"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="75dp"/>
+
+    <ImageButton
+        android:id="@+id/res2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/burger"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/res1"
+        android:layout_marginTop="75dp"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/res3"
+        android:src="@drawable/barbeque"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/res2"
+        android:layout_marginTop="75dp"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/res4"
+        android:src="@drawable/img_2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="75dp"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/res5"
+        android:src="@drawable/img_3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/res4"
+        android:layout_marginTop="75dp"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/res6"
+        android:src="@drawable/kfc"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/res5"
+        android:layout_marginTop="75dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:text="AVAILABLE RESTAURANTS NEAR YOU!"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/ronaldo"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

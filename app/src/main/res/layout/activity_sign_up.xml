@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#8A8A8A"/>
+
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:src="@drawable/icon"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo1"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/number"
+        android:hint="Number"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape"
+        android:textColorHint="@color/white"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/name"
+        android:hint="Name"
+        android:layout_below="@+id/logo1"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/shape"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="300dp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/shape"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/number"
+        android:layout_marginTop="40dp"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:paddingLeft="10dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:background="@drawable/shape"/>
+
+
+    <Button
+        android:id="@+id/signin"
+        android:textColor="@color/white"
+        android:text="sign in"
+        android:background="@drawable/button_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="30dp"
+        android:layout_height="40dp"/>
+
+</RelativeLayout>
